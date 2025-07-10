@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Biomedical Waste Audit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Biomedical Waste Audit Form</h2>
+  <form id="auditForm">
+    <label for="block">Block:</label>
+    <select id="block" name="Block" required>
+      <option value="">Select Block</option>
+      <option value="Block 1-2">Block 1-2</option>
+      <option value="Block 3-4">Block 3-4</option>
+      <option value="Retina">Retina</option>
+      <option value="Cornea">Cornea</option>
+      <option value="Glaucoma">Glaucoma</option>
+      <option value="Plasty">Plasty</option>
+      <option value="Ward">Ward</option>
+      <option value="Emergency Room">Emergency Room</option>
+      <option value="Operation Theatre">Operation Theatre</option>
+    </select><br>
+
+    <label for="room">Room:</label>
+    <input type="text" id="room" name="Room" required><br>
+
+    <label>Yellow Bin Present:</label>
+    <input type="radio" name="Yellow" value="Yes" required> Yes
+    <input type="radio" name="Yellow" value="No"> No<br>
+
+    <label>Red Bin Present:</label>
+    <input type="radio" name="Red" value="Yes" required> Yes
+    <input type="radio" name="Red" value="No"> No<br>
+
+    <label>Blue Bin Present:</label>
+    <input type="radio" name="Blue" value="Yes" required> Yes
+    <input type="radio" name="Blue" value="No"> No<br>
+
+    <label>Black Bin Present:</label>
+    <input type="radio" name="Black" value="Yes" required> Yes
+    <input type="radio" name="Black" value="No"> No<br>
+
+    <label>PPC Present:</label>
+    <input type="radio" name="PPC" value="Yes" required> Yes
+    <input type="radio" name="PPC" value="No"> No<br>
+
+    <label for="remark">Remark:</label>
+    <input type="text" id="remark" name="Remark"><br>
+
+    <label for="photo">Upload Photo:</label>
+    <input type="file" id="photo" name="Photo"><br>
+
+    <input type="hidden" id="latitude" name="Latitude">
+    <input type="hidden" id="longitude" name="Longitude">
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
