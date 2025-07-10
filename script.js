@@ -1,4 +1,3 @@
-
 document.getElementById('auditForm').addEventListener('submit', function(e) {
   e.preventDefault();
 
@@ -9,7 +8,7 @@ document.getElementById('auditForm').addEventListener('submit', function(e) {
     const form = document.getElementById('auditForm');
     const formData = new FormData(form);
 
-    fetch('https://script.google.com/macros/s/AKfycbzz0PuzhJLu-LL19TvWxqRVyJ6komFnnR-YpIEg5pe0AcLzfnU_Fii1Bx0jL1zrUBYSuw/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbzz0PuzhJLu-LLl9TvWxqRVyJ6komFnnR-YpIEg5peOAcLzfnU_Fii1BxOjL1zrUBYSuw/exec, {
       method: 'POST',
       body: formData
     })
